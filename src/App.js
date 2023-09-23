@@ -2,19 +2,22 @@ import logo from "./logo.svg";
 import "./App.css";
 
 import { useState } from "react";
-import Parent from "./components/reactMemo/parent";
+import ParentThree from "./components/inCorrectMemo/parentThree";
+import ParentFour from "./components/incorrectmemoAgain/parentfour";
+import ChildFour from "./components/incorrectmemoAgain/childfour";
+import GrandChildFour from "./components/incorrectmemoAgain/grandChildFour";
 
 function App() {
-  const [grandCount, setGrandCount] = useState(0);
-  const handleIncrement = () => {
-    setGrandCount(grandCount + 1);
-  };
   console.log("Grand parent rendering");
+  const [grandCount, setGrandCount] = useState(0);
   return (
     <div className="App">
       <h1>React Render Demo Project</h1>
-      <h3>Grand Count value is {grandCount}</h3>
-      <Parent />
+      <button onClick={() => setGrandCount((c) => c + 1)}>
+        Increment Grand Count
+      </button>
+      {/* <ParentThree /> */}
+      <ParentFour />
     </div>
   );
 }
