@@ -7,6 +7,7 @@ import ParentFour from "./components/incorrectmemoAgain/parentfour";
 import ChildFour from "./components/incorrectmemoAgain/childfour";
 import GrandChildFour from "./components/incorrectmemoAgain/grandChildFour";
 import ParentFive from "./components/inCorrectMemoWithPropsRef/parent5";
+import ParentSix from "./components/useMemoAndCallback/parent6";
 
 function App() {
   console.log("Grand parent rendering");
@@ -19,7 +20,8 @@ function App() {
       </button>
       {/* <ParentThree /> */}
       {/* <ParentFour /> */}
-      <ParentFive />
+      {/* <ParentFive /> */}
+      <ParentSix />
     </div>
   );
 }
