@@ -27,6 +27,7 @@ const ParentSix = () => {
       <br />
 
       <ChildSix person={p} handler={handler} />
+      <p>just for purpose of other commit</p>
     </div>
   );
 };
