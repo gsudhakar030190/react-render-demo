@@ -32,6 +32,7 @@ const ParentFive = () => {
       <ChildFive person={fullName} />
       <p> am done</p>
       <p>other line thats it</p>
+      <p>some other line</p>
     </>
   );
 };
