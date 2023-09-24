@@ -6,6 +6,7 @@ import ParentThree from "./components/inCorrectMemo/parentThree";
 import ParentFour from "./components/incorrectmemoAgain/parentfour";
 import ChildFour from "./components/incorrectmemoAgain/childfour";
 import GrandChildFour from "./components/incorrectmemoAgain/grandChildFour";
+import ParentFive from "./components/inCorrectMemoWithPropsRef/parent5";
 
 function App() {
   console.log("Grand parent rendering");
@@ -17,7 +18,8 @@ function App() {
         Increment Grand Count
       </button>
       {/* <ParentThree /> */}
-      <ParentFour />
+      {/* <ParentFour /> */}
+      <ParentFive />
     </div>
   );
 }
