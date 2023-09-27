@@ -8,6 +8,8 @@ import ChildFour from "./components/incorrectmemoAgain/childfour";
 import GrandChildFour from "./components/incorrectmemoAgain/grandChildFour";
 import ParentFive from "./components/inCorrectMemoWithPropsRef/parent5";
 import ParentSix from "./components/useMemoAndCallback/parent6";
+import MainParent from "./components/recap/reactRenderRecap";
+import { MainChild } from "./components/recap/reactRenderRecapChild";
 
 function App() {
   console.log("Grand parent rendering");
@@ -15,13 +17,16 @@ function App() {
   return (
     <div className="App">
       <h1>React Render Demo Project</h1>
-      <button onClick={() => setGrandCount((c) => c + 1)}>
+      {/* <button onClick={() => setGrandCount((c) => c + 1)}>
         Increment Grand Count
-      </button>
+      </button> */}
       {/* <ParentThree /> */}
       {/* <ParentFour /> */}
       {/* <ParentFive /> */}
-      <ParentSix />
+      {/* <ParentSix /> */}
+      <MainParent>
+        <MainChild message="name" />
+      </MainParent>
     </div>
   );
 }
