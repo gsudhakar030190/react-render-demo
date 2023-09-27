@@ -10,6 +10,8 @@ import ParentFive from "./components/inCorrectMemoWithPropsRef/parent5";
 import ParentSix from "./components/useMemoAndCallback/parent6";
 import MainParent from "./components/recap/reactRenderRecap";
 import { MainChild } from "./components/recap/reactRenderRecapChild";
+import ParentContext from "./components/context/parentContext";
+import ChildA from "./components/context/childContext";
 
 function App() {
   console.log("Grand parent rendering");
@@ -24,9 +26,10 @@ function App() {
       {/* <ParentFour /> */}
       {/* <ParentFive /> */}
       {/* <ParentSix /> */}
-      <MainParent>
+      {/* <MainParent>
         <MainChild message="name" />
-      </MainParent>
+      </MainParent> */}
+      <ParentContext />
     </div>
   );
 }
